@@ -37,14 +37,6 @@ int main() {
         k++;
     } while(k <= 8);
 
-    return 0;
-}
-
-
-
-
-
-
 
 
     // Nível Novato - Movimentação das Peças
