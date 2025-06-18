@@ -19,6 +19,19 @@ void moverRainha(int casas) {
     moverRainha(casas - 1);
 }
 
+// Função recursiva com loops aninhados para o movimento do Bispo
+void moverBispo(int casas) {
+    if (casas == 0) return;
+
+    for (int i = 0; i < 1; i++) { // Simula o movimento vertical
+        for (int j = 0; j < 1; j++) { // Simula o movimento horizontal
+            printf("Cima Direita\n");
+        }
+    }
+
+    moverBispo(casas - 1);
+}
+
 int main() {
 
 
