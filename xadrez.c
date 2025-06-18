@@ -17,6 +17,17 @@ int main() {
 
     printf("\n"); // Separador visual
 
+    // Movimento do Bispo: 5 casas na diagonal para cima e à direita
+    // Usando estrutura de repetição 'while'
+    int j = 1;
+    printf("Movimento do Bispo:\n");
+    while(j <= 5) {
+        printf("Cima Direita\n");
+        j++;
+    }
+
+    printf("\n"); // Separador visual
+
 
 
 
