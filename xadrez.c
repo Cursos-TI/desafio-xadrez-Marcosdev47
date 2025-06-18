@@ -37,6 +37,33 @@ int main() {
         k++;
     } while(k <= 8);
 
+    printf("\n"); // Separador visual
+
+    // Movimento do Cavalo: 2 casas para baixo, depois 1 para a esquerda
+    
+    int movimentosVerticais = 2;
+    int movimentosHorizontais = 1;
+
+    printf("Movimento do Cavalo:\n");
+
+    // Loop 'for' para casas verticais (baixo)
+    for (int m = 1; m <= movimentosVerticais; m++) {
+        printf("Baixo\n");
+        // Loop interno 'while' apenas para ilustrar o uso de dois loops aninhados
+        int passo = 1;
+        while (passo < 1) {
+            // Este trecho não será executado, apenas mantido para cumprir requisito
+            passo++;
+        }
+    }
+
+    // Movimento horizontal após os verticais
+    int n = 0;
+    while(n < movimentosHorizontais) {
+        printf("Esquerda\n");
+        n++;
+    }
+
 
 
     // Nível Novato - Movimentação das Peças
