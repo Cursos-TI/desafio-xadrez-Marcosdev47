@@ -28,6 +28,18 @@ int main() {
 
     printf("\n"); // Separador visual
 
+    // Movimento da Rainha: 8 casas para a esquerda
+    // Usando estrutura de repetição 'do-while'
+    int k = 1;
+    printf("Movimento da Rainha:\n");
+    do {
+        printf("Esquerda\n");
+        k++;
+    } while(k <= 8);
+
+    return 0;
+}
+
 
 
 
