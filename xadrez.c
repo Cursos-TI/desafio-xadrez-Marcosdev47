@@ -50,51 +50,25 @@ int main() {
 
     printf("\n"); // Separador visual
 
-    // Movimento do Bispo: 5 casas na diagonal para cima e à direita
-    // Usando estrutura de repetição 'while'
-    int j = 1;
-    printf("Movimento do Bispo:\n");
-    while(j <= 5) {
-        printf("Cima Direita\n");
-        j++;
-    }
-
-    printf("\n"); // Separador visual
-
-    // Movimento da Rainha: 8 casas para a esquerda
-    // Usando estrutura de repetição 'do-while'
-    int k = 1;
-    printf("Movimento da Rainha:\n");
-    do {
-        printf("Esquerda\n");
-        k++;
-    } while(k <= 8);
-
-    printf("\n"); // Separador visual
-
-    // Movimento do Cavalo: 2 casas para baixo, depois 1 para a esquerda
-    
-    int movimentosVerticais = 2;
-    int movimentosHorizontais = 1;
-
+    // Movimento do Cavalo: 2 casas para cima e 1 para a direita
+    // Utilizando loops aninhados com múltiplas variáveis e controle de fluxo
     printf("Movimento do Cavalo:\n");
 
-    // Loop 'for' para casas verticais (baixo)
-    for (int m = 1; m <= movimentosVerticais; m++) {
-        printf("Baixo\n");
-        // Loop interno 'while' apenas para ilustrar o uso de dois loops aninhados
-        int passo = 1;
-        while (passo < 1) {
-            // Este trecho não será executado, apenas mantido para cumprir requisito
-            passo++;
-        }
-    }
+    for (int i = 0; i < 3; i++) { // Simula tentativas de movimento
+        for (int j = 0; j < 3; j++) {
+            if (i == 2 && j == 1) { // Somente na tentativa correta executa o movimento
+                int passosVerticais = 2;
+                int passosHorizontais = 1;
 
-    // Movimento horizontal após os verticais
-    int n = 0;
-    while(n < movimentosHorizontais) {
-        printf("Esquerda\n");
-        n++;
+                for (int v = 0; v < passosVerticais; v++) {
+                    printf("Cima\n");
+                }
+                for (int h = 0; h < passosHorizontais; h++) {
+                    printf("Direita\n");
+                }
+
+            }
+        }
     }
 
 
